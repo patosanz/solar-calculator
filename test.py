@@ -27,7 +27,7 @@ class TestFormulas(TestCase):
         latitude : float = -37.8136
         timezone: float = 10
         result : SolarResult = formulas.calculate(latitude, longitude, 0, date, timezone)
-        self.assertAlmostEqual(result.solar_radiation, 1026.286163437431, 4) # 10% off.
+        self.assertAlmostEqual(result.solar_radiation, 1026.286163437431, 4)
 
     def test_intensity_direct(self) -> None:
             formulas : PhotoVoltaicEducation = PhotoVoltaicEducation()
